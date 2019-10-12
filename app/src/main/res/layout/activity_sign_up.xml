@@ -132,6 +132,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/border_gray"/>
+
             <Button
                 android:id="@+id/btnSignUp"
                 android:layout_marginTop="25dp"
@@ -139,7 +140,7 @@
                 android:textSize="16.3sp"
                 android:textColor="#ffffff"
                 android:lineSpacingExtra="3sp"
-                tools:text="Sign Up"
+                android:text="Sign Up"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/button"/>
