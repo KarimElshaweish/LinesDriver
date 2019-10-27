@@ -9,9 +9,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:src="@drawable/logo_splash"
-    android:backgroundTint="@color/colorPrimary"
-    android:background="@color/colorPrimary"
-    app:backgroundTint="@color/colorPrimary"
+    android:backgroundTint="@color/line_colors"
+    android:background="@color/line_colors"
+    app:backgroundTint="@color/line_colors"
     android:elevation="0dp"
     android:layout_gravity="center"/>
     <LinearLayout

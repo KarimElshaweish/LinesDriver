@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activites.SignUpActivity"
     android:layout_width="match_parent"
     android:background="#fff"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
         android:background="#fff"
         android:layout_width="match_parent"
@@ -51,19 +52,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/border_gray"/>
-            <EditText
-                android:inputType="phone"
-                android:fontFamily="@font/nunito_req"
-                android:layout_margin="5dp"
-                android:id="@+id/phoneNumber"
-                android:textSize="14.5sp"
-                android:textColor="#000"
-                android:lineSpacingExtra="4.8sp"
-                android:hint="Phone Number"
-                android:padding="10dp"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border_gray"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    app:ccp_defaultNameCode="US"  />
+                <EditText
+                    android:inputType="phone"
+                    android:fontFamily="@font/nunito_req"
+                    android:layout_margin="5dp"
+                    android:id="@+id/phoneNumber"
+                    android:textSize="14.5sp"
+                    android:textColor="#000"
+                    android:lineSpacingExtra="4.8sp"
+                    android:hint="Phone Number"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_gray"/>
+
+            </LinearLayout>
 
 
 
@@ -108,14 +122,14 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/border_gray"/>
             <EditText
-                android:inputType="number"
+                android:inputType="textPassword"
                 android:fontFamily="@font/nunito_req"
                 android:layout_margin="5dp"
-                android:id="@+id/numberOfPassengers"
+                android:id="@+id/password"
                 android:textSize="14.5sp"
                 android:textColor="#000"
                 android:lineSpacingExtra="4.8sp"
-                android:hint="Number of Passengers"
+                android:hint="Password"
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -145,5 +159,16 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/button"/>
         </LinearLayout>
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:visibility="gone"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.DoubleBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/line_colors"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
     </RelativeLayout>
 </ScrollView>

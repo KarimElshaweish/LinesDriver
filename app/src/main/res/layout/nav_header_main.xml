@@ -8,11 +8,13 @@
     android:padding="5dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
         android:layout_width="62.7dp"
         android:layout_gravity="center"
         android:layout_height="62.7dp"
         android:src="@drawable/avatar"/>
     <TextView
+        android:id="@+id/fullName"
         android:layout_gravity="center"
         android:layout_marginLeft="15dp"
         android:fontFamily="@font/nunito_bold"

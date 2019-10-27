@@ -8,9 +8,9 @@
 <com.google.android.material.tabs.TabLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:tabIndicator="@color/colorPrimary"
-    app:tabIndicatorColor="@color/colorPrimary"
-    app:tabSelectedTextColor="@color/colorPrimary"
+    app:tabIndicator="@color/line_colors"
+    app:tabIndicatorColor="@color/line_colors"
+    app:tabSelectedTextColor="@color/line_colors"
     android:id="@+id/tb"/>
 
 

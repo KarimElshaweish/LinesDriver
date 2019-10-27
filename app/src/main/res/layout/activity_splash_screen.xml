@@ -49,7 +49,7 @@
             android:background="@drawable/border_button"
             android:textSize="16.3sp"
             android:fontFamily="@font/nunito_bold"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/line_colors"
             android:text="Sign Up"/>
 
     </LinearLayout>

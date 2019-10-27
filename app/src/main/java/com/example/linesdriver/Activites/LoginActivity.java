@@ -1,14 +1,15 @@
 package com.example.linesdriver.Activites;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.linesdriver.R;
 
 public class LoginActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +17,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void finish(View view) {
-        finish();
-    }
+
 
     public void submit(View view) {
         startActivity(new Intent(this,VertificationCode.class));

@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.linesdriver.Activites.DriverProfile;
 import com.example.linesdriver.Activites.ProfileActivity;
 import com.example.linesdriver.R;
 
@@ -26,7 +25,6 @@ public class HorzAdapter extends RecyclerView.Adapter<HorzAdapter.ViewHolder> {
         View view= LayoutInflater.from(_ctx).inflate(R.layout.rv_item_adapter,parent,false);
         return new ViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.cv.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +35,6 @@ public class HorzAdapter extends RecyclerView.Adapter<HorzAdapter.ViewHolder> {
         });
 
     }
-
     @Override
     public int getItemCount() {
         return 5;

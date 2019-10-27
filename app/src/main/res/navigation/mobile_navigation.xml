@@ -40,4 +40,9 @@
         android:name="com.example.linesdriver.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_veichale"
+        android:name="com.example.linesdriver.ui.Vehicle.VehicleFeragment"
+        android:label="@string/Vehicle"
+        tools:layout="@layout/vehicle_feragment" />
 </navigation>

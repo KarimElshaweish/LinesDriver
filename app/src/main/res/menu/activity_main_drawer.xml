@@ -16,8 +16,8 @@
             android:id="@+id/nav_tools"
             android:title="@string/menu_Notification" />
         <item
-            android:id="@+id/nav_Help"
-            android:title="@string/menu_Help" />
+            android:id="@+id/nav_veichale"
+            android:title="@string/Vehicle" />
         <item
             android:id="@+id/nav_Terms"
             android:title="@string/menu_Terms" />
